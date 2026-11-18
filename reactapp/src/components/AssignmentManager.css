@@ -1,0 +1,203 @@
+.assignment-manager-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.assignment-header h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.assignment-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.dispatch-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.dispatch-form {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 1.25rem;
+  align-items: flex-end;
+}
+
+.dispatch-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.dispatch-field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.dispatch-btn-wrap button {
+  width: 100%;
+  height: 40px;
+}
+
+/* Agent Workload */
+.workload-section h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.agent-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.agent-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.agent-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: #c7d2fe;
+}
+
+.agent-card.active {
+  border-color: var(--primary);
+  background-color: var(--primary-light);
+}
+
+.agent-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.agent-card-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+
+.agent-card-role {
+  font-size: 0.725rem;
+  color: var(--text-muted);
+}
+
+.agent-task-count {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.count-num {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.count-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+/* Table */
+.assignment-table-card {
+  padding: 0;
+  overflow-x: auto;
+}
+
+.table-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.table-header-row h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.assignment-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.assignment-table th {
+  background-color: #f8fafc;
+  padding: 0.85rem 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.assignment-table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.875rem;
+}
+
+.assign-id {
+  font-weight: 600;
+  color: var(--text-muted);
+  width: 120px;
+}
+
+.assign-task-title {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.assign-task-id {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.assignee-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.assignee-name {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.assignee-email {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.assign-time {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .dispatch-form {
+    grid-template-columns: 1fr;
+  }
+}
